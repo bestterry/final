@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+    <script language="javascript">
+
+        function a(){
+            var int1 = document.getElementById("input1").value;
+            var int2 = document.getElementById("input2").value;
+            var n1 = parseInt(int1);
+            var n2 = parseInt(int2);
+            if ((isNaN(n1))||(isNaN(n2))){
+                document.getElementById("show").setAttribute("color","red");
+                show.innerHTML="ERROR";
+            }
+            else {
+                s=n1+n2;
+                document.getElementById("show").setAttribute("color","green");
+                show.innerHTML=s;
+            }
+        }
+        function b(){
+            var int1 = document.getElementById("input1").value;
+            var int2 = document.getElementById("input2").value;
+            var n1 = parseInt(int1);
+            var n2 = parseInt(int2);
+            if ((isNaN(n1))||(isNaN(n2))){
+                document.getElementById("show").setAttribute("color","red");
+                show.innerHTML="ERROR";
+            }
+            else {
+                s=n1-n2;
+                document.getElementById("show").setAttribute("color","green");
+                show.innerHTML=s;
+            }
+        }
+        function c(){
+            var int1 = document.getElementById("input1").value;
+            var int2 = document.getElementById("input2").value;
+            var n1 = parseInt(int1);
+            var n2 = parseInt(int2);
+            if ((isNaN(n1))||(isNaN(n2))){
+                document.getElementById("show").setAttribute("color","red");
+                show.innerHTML="ERROR";
+            }
+            else {
+                s=n1*n2;
+                document.getElementById("show").setAttribute("color","green");
+                show.innerHTML=s;
+            }
+        }
+        function d(){
+            var int1 = document.getElementById("input1").value;
+            var int2 = document.getElementById("input2").value;
+            var n1 = parseInt(int1);
+            var n2 = parseInt(int2);
+            if ((isNaN(n1))||(isNaN(n2))){
+                document.getElementById("show").setAttribute("color","red");
+                show.innerHTML="ERROR";
+            }
+            else {
+                s=n1/n2;
+                document.getElementById("show").setAttribute("color","green");
+                show.innerHTML=s;
+            }
+        }
+    </script>
+</head>
+
+<body>
+<center>
+    ช่อง1  : <input id="input1" name="input1" size="10" /><br />
+    ช่อง2  : <input id="input2" name="input2" size="10" /><br />
+    ผลลัพธ์ : <font id="show" color=""></font> <br />
+
+    <button onclick="javascript: a();">+</button>
+    <button onclick="javascript: b();">-</button>
+    <button onclick="javascript: c();">x</button>
+    <button onclick="javascript: d();">/</button>
+</center>
+</body>
+</html>
